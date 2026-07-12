@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="amazon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+
+        <div class="nav-logo border">
+            <a href="https://www.amazon.in">
+                <div class="logo"></div>
+            </a>
+        </div>
+
+        <div class="border deliver-box">
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <p class="add-first">Deliver to</p>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select" id="search-select">
+                <option>All</option>
+            </select>
+            <input class="search-input" id="search-input" type="text" placeholder="Search Amazon">
+            <div class="search-icon" onclick="searchAmazon()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="border nav-signin">
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="border nav-return">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="border nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+
+    </div>
+
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+</header>
+
+<div class="hero-section">
+    <div class="hero-msg">
+        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+            <a href="https://www.amazon.in" target="_blank">Click here to go to amazon.in</a>
+        </p>
+    </div>
+</div>
+
+<div class="shop-section">
+
+    <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">Clothes</h2>
+            <a href="https://www.amazon.in/s?k=health+personal+care" target="_blank">
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=health+personal+care" target="_blank">See more</a></p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">health & Personal Care</h2>
+            <a href="https://www.amazon.in/s?k=electronics" target="_blank">
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=electronics" target="_blank">See more</a></p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">Home & Kitchen</h2>
+            <a href="https://www.amazon.in/s?k=home+kitchen" target="_blank">
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=home+kitchen" target="_blank">See more</a></p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">Mobiles</h2>
+            <a href="https://www.amazon.in/s?k=mobiles" target="_blank">
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=mobiles" target="_blank">See more</a></p>
+        </div>
+    </div>
+     <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">Beauty Picks</h2>
+            <a href="https://www.amazon.in/s?k=electronics" target="_blank">
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=electronics" target="_blank">See more</a></p>
+        </div>
+    </div>
+ <div class="box">
+        <div class="box-content">
+            <h2 class="box-title"> Pet Care</h2>
+            <a href="https://www.amazon.in/s?k=electronics" target="_blank">
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=electronics" target="_blank">See more</a></p>
+        </div>
+    </div>
+ <div class="box">
+        <div class="box-content">
+            <h2 class="box-title">New Arrival In Toys</h2>
+            <a href="https://www.amazon.in/s?k=electronics" target="_blank">
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=electronics" target="_blank">See more</a></p>
+        </div>
+    </div>
+ <div class="box2 box">
+        <div class="box-content">
+            <h2 class="box-title">Discover Fashion Trends</h2>
+            <a href="https://www.amazon.in/s?k=electronics" target="_blank">
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+            </a>
+            <p class="box-link"><a href="https://www.amazon.in/s?k=electronics" target="_blank">See more</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+<footer>
+
+    <div class="foot-pane1">
+        <p>Back to top</p>
+    </div>
+
+    <div class="foot-pane2">
+        <ul>
+            <h3>Get to Know Us</h3>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">About Amazon</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Amazon Devices</a>
+        </ul>
+        <ul>
+            <h3>Make Money with Us</h3>
+            <a href="#">Sell products on Amazon</a>
+            <a href="#">Sell on Amazon Business</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Advertise Your Products</a>
+            <a href="#">Self-Publish with Us</a>
+        </ul>
+        <ul>
+            <h3>Amazon Payment Products</h3>
+            <a href="#">Amazon Business Card</a>
+            <a href="#">Shop with Points</a>
+            <a href="#">Reload Your Balance</a>
+            <a href="#">Amazon Currency Converter</a>
+        </ul>
+        <ul>
+            <h3>Let Us Help You</h3>
+            <a href="#">Your Account</a>
+            <a href="#">Your Orders</a>
+            <a href="#">Shipping Rates & Policies</a>
+            <a href="#">Returns & Replacements</a>
+            <a href="#">Help</a>
+        </ul>
+    </div>
+
+    <div class="foot-pane3">
+        <div class="logo">
+        
+        </div>
+    </div>
+
+    <div class="foot-pane4">
+        <div class="pages">
+            <p>Conditions of Use &nbsp;&nbsp; Privacy Notice &nbsp;&nbsp; Interest-Based Ads</p>
+            <p class="copyright">© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
