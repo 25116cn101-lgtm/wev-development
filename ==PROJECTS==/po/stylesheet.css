@@ -1,0 +1,223 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  color: #2b2b2b;
+}
+
+/* ===== Top frame ===== */
+body.top-frame {
+  background-color: #1f3a5f;
+  background-image: linear-gradient(135deg, #1f3a5f, #2d5586);
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  background-color: #ffffff;
+  color: #1f3a5f;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.site-name {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.main-nav {
+  margin-top: 8px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  margin-right: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Left frame ===== */
+body.left-frame {
+  background-color: #eef2f7;
+  padding: 14px 8px;
+}
+
+.dept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dept-list li {
+  margin-bottom: 10px;
+}
+
+.dept-list a {
+  display: block;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  text-decoration: none;
+  color: #1f3a5f;
+  font-weight: 500;
+}
+
+.dept-list a:hover {
+  background-color: #1f3a5f;
+  color: #ffffff;
+}
+
+/* ===== Main frame ===== */
+body.main-frame {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #1f3a5f;
+}
+
+/* ===== Links (a:link, a:visited, a:active, a:hover) ===== */
+a:link {
+  color: #1f3a5f;
+}
+
+a:visited {
+  color: #6a4fa0;
+}
+
+a:active {
+  color: #d9534f;
+}
+
+a:hover {
+  color: #2d5586;
+  text-decoration: underline;
+}
+
+/* ===== Forms ===== */
+form {
+  max-width: 480px;
+}
+
+.form-row {
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-row label,
+.row-label {
+  min-width: 130px;
+  font-weight: 500;
+}
+
+.form-row input[type="text"],
+.form-row input[type="password"],
+.form-row textarea,
+.form-row select {
+  padding: 6px 8px;
+  border: 1px solid #c3c9d1;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-row button {
+  background-color: #1f3a5f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.form-row button:hover {
+  background-color: #2d5586;
+}
+
+.error-text {
+  color: #d9534f;
+  font-size: 13px;
+}
+
+.success-text {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* ===== Tables (catalogue & cart) ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #d3d8e0;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #1f3a5f;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f7fb;
+}
+
+.cover-box {
+  width: 60px;
+  height: 70px;
+  background-color: #eef2f7;
+  border: 1px solid #c3c9d1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: #1f3a5f;
+}
+
+.add-cart-btn {
+  background-color: #f0ad4e;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-cart-btn:hover {
+  background-color: #ec971f;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #f4f7fb;
+}
