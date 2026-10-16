@@ -1131,3 +1131,46 @@ footer h6{
         background:rgba(255,255,255,.98);
     }
 }
+
+/* CURSOR FOLLOWING BLUE GLOW */
+
+body {
+    position: relative;
+    isolation: isolate;
+}
+
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(56, 189, 248, 0.13) 0%,
+        rgba(56, 189, 248, 0.06) 40%,
+        transparent 70%
+    );
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    will-change: left, top;
+}
+
+/* Light mode */
+body.light-mode .cursor-glow {
+    background: radial-gradient(
+        circle,
+        rgba(56, 189, 248, 0.16) 0%,
+        rgba(56, 189, 248, 0.07) 40%,
+        transparent 70%
+    );
+}
+
+/* Disable glow on touch devices */
+@media (hover: none) {
+    .cursor-glow {
+        display: none;
+    }
+}
