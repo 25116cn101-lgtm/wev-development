@@ -443,3 +443,13 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+
+
+const glow = document.createElement("div");
+glow.className = "cursor-glow";
+document.body.appendChild(glow);
+
+document.addEventListener("mousemove", (event) => {
+    glow.style.left = event.clientX + "px";
+    glow.style.top = event.clientY + "px";
+});
